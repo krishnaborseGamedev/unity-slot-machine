@@ -5,6 +5,10 @@ A classic 3-reel slot machine built in Unity 6 (URP) for a Game Developer Intern
 ## Game Overview
 Click SPIN to spin 3 reels. Each reel randomly lands on one of 4 symbols (Cherry, Bell, Seven, Bar). Matching all 3 reels wins coins, tracked via a coin/payout system. Includes win/loss popups and smooth reel-stop animations.
 
+## Play the Game
+🎮 **Play the WebGL version:**
+https://krishnaborsegamedev.github.io/unity-slot-machine/
+
 ## Instructions to Run
 1. Clone or download this repository
 2. Navigate to `Build/WebGL`
