@@ -10,10 +10,11 @@ Click SPIN to spin 3 reels. Each reel randomly lands on one of 4 symbols (Cherry
 https://krishnaborsegamedev.github.io/unity-slot-machine/
 
 ## Instructions to Run
-1. Clone or download this repository
-2. Navigate to `Build/WebGL`
-3. Serve the folder locally (e.g. `npx serve` or any local web server — required for WebGL to run in-browser)
-4. Open the shown localhost URL in your browser
+1: Run the link.
+2. Clone or download this repository
+3. Navigate to `Build/WebGL`
+4. Serve the folder locally (e.g. `npx serve` or any local web server — required for WebGL to run in-browser)
+5. Open the shown localhost URL in your browser
 
 ## Bonus Features
 - Win/Loss popup panels
@@ -21,7 +22,9 @@ https://krishnaborsegamedev.github.io/unity-slot-machine/
 - Smooth staggered reel-stop animation
 
 ## Approach
-Built the core reel mechanic first (RNG-based symbol landing, tracked via Sprite reference to avoid indexing bugs across reels), then layered UI (Canvas, Mask-based reel windows), win-check logic, and finally coin/payout + popup feedback. Used AI assistance to speed up scripting and debug logic issues, while handling all Unity setup, UI wiring, and design decisions myself.
+Three independent reels spin with randomized symbols and stop at different times.
+A matching three-symbol combination triggers a 100-coin payout, while each spin costs 10 coins.
+The game uses separate Reel and SlotMachine scripts for reel behaviour and overall game logic.
 
 ## Known Issue
 Some UI element positions (lever, symbols) may appear slightly shifted depending on screen resolution — likely a Canvas Scaler/resolution mismatch between Editor and WebGL build.
